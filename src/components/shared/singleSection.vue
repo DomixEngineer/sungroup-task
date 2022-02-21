@@ -10,14 +10,6 @@
 <script>
 export default {
   name: "singleSection",
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-
-  },
   props: {
     title: String,
     paragraphs: Array

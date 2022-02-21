@@ -10,6 +10,11 @@
     <single-section :title="fifthSection.title" :paragraphs="fifthSection.paragraphs"></single-section>
     <single-section :title="sixthSection.title" :paragraphs="sixthSection.paragraphs"></single-section>
     <single-image :img-src="fourthImage.src" :img-alt="fourthImage.alt"></single-image>
+    <single-section :title="seventhSection.title" :paragraphs="seventhSection.paragraphs"></single-section>
+    <single-section :title="eighthSection.title" :paragraphs="eighthSection.paragraphs"></single-section>
+    <single-image :img-src="fifthImage.src" :img-alt="fifthImage.alt"></single-image>
+    <single-section :title="ninthSection.title" :paragraphs="ninthSection.paragraphs"></single-section>
+    <single-section :title="tenthSection.title" :paragraphs="tenthSection.paragraphs"></single-section>
   </div>
 </template>
 
@@ -41,11 +46,11 @@ export default {
         src: 'laptop_5.png',
         alt: 'Opis obrazka'
       },
-      sixthImage: {
+      fifthImage: {
         src: 'laptop_6.png',
         alt: 'Opis obrazka'
       },
-      seventhImage: {
+      sixthImage: {
         src: 'laptop_7.png',
         alt: 'Opis obrazka'
       },
@@ -84,6 +89,30 @@ export default {
         title: 'Nowy poziom wydajności',
         paragraphs: [
           'Opcjonalna dedykowana karta graficzna NVIDIA® GeForce® MX250 zwiększa dodatkowo możliwości laptopa w zastosowaniach służbowych i rozrywkowych. Korzystaj z nawet 3,5-krotnie większej wydajności w porównaniu ze zintegrowaną kartą graficzną w aplikacjach do edycji zdjęć i wideo, a także z szybszej i płynniejszej gry.'
+        ]
+      },
+      seventhSection: {
+        title: 'Intuicyjnie i interaktywnie',
+        paragraphs: [
+          'Kamera na podczerwień ułatwia życie. Wystarczy, że się oddalisz, a oglądany film zostanie automatycznie wstrzymany. Zawartość wyświetlacza laptopa możesz przenieść na dodatkowy monitor ruchem głowy. A to jeszcze nie wszystko. Laptop Yoga S740 reaguje na Twój styl użytkowania, dlatego możesz skupić się na tym, co ważne.'
+        ]
+      },
+      eighthSection: {
+        title: 'Zna Cię lepiej',
+        paragraphs: [
+          'Możesz na przykład logować się do niego samym uśmiechem. Dzięki kamerze na podczerwień i funkcji rozpoznawania twarzy Windows Hello możesz zacząć pracę trzy razy szybciej niż wpisując hasło. Jest też świetnie zabezpieczony. '
+        ]
+      },
+      ninthSection: {
+        title: 'Elegancki styl i mobilność',
+        paragraphs: [
+          'Yoga S740 ma obudowę z piaskowanego aluminium z wykończeniem wysokiej klasy i łączy w sobie wysoką wydajność z wygodną mobilnością. Ma jedynie 14,9 mm grubości, a waży zaledwie 1,4 kg i jest dostępny w kolorze żelaznoszarym lub z ciepłym, metalicznym mikowym wykończeniem.'
+        ]
+      },
+      tenthSection: {
+        title: 'Szybki i elastyczny',
+        paragraphs: [
+          'Yoga S740 ma port Thunderbolt™ 3. Pod względem szybkości przewyższa on port USB 3.0 aż 8 razy, dlatego stanowi najszybszy i najbardziej uniwersalny sposób łączenia z monitorami, stacjami dokującymi i pamięcią masową. Co więcej, służy też jako źródło zasilania. Laptop ma też szybką łączność Wi-Fi 6, dlatego możesz teraz wyświetlać strumieniowe wideo i przeglądać strony internetowe bez porównania płynniej.'
         ]
       }
     }
