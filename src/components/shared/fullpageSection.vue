@@ -70,4 +70,27 @@ export default {
     color: white;
     font-family: 'Gotham-Book';
   }
+  @media (max-width: 688px) {
+    .lenovo-logo {
+      display: none;
+    }
+    .container-flex .row {
+      display: block;
+      max-width: 90%;
+      transform: translateY(15%);
+    }
+    .header {
+      margin-top: 0;
+      font-size: 8vw;
+    }
+    .sub-header {
+      margin-top: 0;
+      font-size: 6vw;
+    }
+    .col img {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 </style>
