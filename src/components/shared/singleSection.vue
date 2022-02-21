@@ -36,4 +36,13 @@ export default {
     line-height: 30px;
     color: #000000;
   }
+  @media (max-width: 688px) {
+    .section-title {
+      font-size: 7vw;
+      line-height: 40px;
+    }
+    .container {
+      max-width: 90%;
+    }
+  }
 </style>
