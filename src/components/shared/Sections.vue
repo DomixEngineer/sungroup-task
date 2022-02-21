@@ -13,6 +13,12 @@
       <template v-if="section.type === 'table_of_content'">
         <table-of-content :title="tableData.title" :rows="tableData.rows"></table-of-content>
       </template>
+      <template v-if="section.type === 'list_items'">
+        <pretty-list :list-items="section.items"></pretty-list>
+      </template>
+      <template v-if="section.type === 'fullpage_section'">
+        <fullpage-section></fullpage-section>
+      </template>
     </template>
   </div>
 </template>
@@ -22,13 +28,17 @@ import singleSection from "./singleSection";
 import singleImage from "./singleImage";
 import tableOfContent from "./tableOfContent";
 import tableData from '../../dataMockups/tableOfContent';
+import prettyList from './prettyList'
+import fullpageSection from "./fullpageSection";
 
 export default {
   name: "Sections.vue",
   components: {
     singleSection,
     singleImage,
-    tableOfContent
+    prettyList,
+    tableOfContent,
+    fullpageSection
   },
   data() {
     return {
