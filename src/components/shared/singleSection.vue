@@ -45,4 +45,14 @@ export default {
       max-width: 90%;
     }
   }
+  @media (min-width: 689px) and (max-width: 992px) {
+    .container {
+      max-width: 90%;
+      width: 100%;
+    }
+    .section-title {
+      font-size: 7vw;
+      line-height: 7vw;
+    }
+  }
 </style>
