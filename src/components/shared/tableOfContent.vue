@@ -40,6 +40,7 @@ export default {
   .tableOfContent {
     border-collapse: collapse;
     width: 100%;
+    table-layout: fixed;
   }
   .tableOfContent tr {
     border-bottom: 1px solid rgba(151, 151, 151, 0.3);
@@ -60,5 +61,24 @@ export default {
     opacity: 0.6;
     font-size: 16px !important;
     color: #000000;
+  }
+  @media (max-width: 688px) {
+    .tableOfContent tr p {
+      line-height: 30px;
+      word-break: break-all;
+    }
+    .tableOfContent .leftCol p {
+      line-height: 30px;
+    }
+    .section-title {
+      font-size: 7vw;
+      line-height: 40px;
+    }
+  }
+  @media (min-width: 689px) and (max-width: 992px) {
+    .container {
+      max-width: 90%;
+      width: 100%;
+    }
   }
 </style>

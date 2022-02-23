@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template v-for="section in sections.sections">
+    <template v-for="section in sections">
       <template v-if="section.type === 'image'">
         <div v-if="section.hasHeader" class="container">
           <h1 class="header">Specyfikacja</h1>
@@ -17,7 +17,7 @@
         <pretty-list :list-items="section.items"></pretty-list>
       </template>
       <template v-if="section.type === 'fullpage_section'">
-        <fullpage-section></fullpage-section>
+        <full-page-section></full-page-section>
       </template>
     </template>
   </div>
@@ -29,7 +29,7 @@ import singleImage from "./singleImage";
 import tableOfContent from "./tableOfContent";
 import tableData from '../../dataMockups/tableOfContent';
 import prettyList from './prettyList'
-import fullpageSection from "./fullpageSection";
+import fullPageSection from "./fullpageSection";
 
 export default {
   name: "Sections.vue",
@@ -38,7 +38,7 @@ export default {
     singleImage,
     prettyList,
     tableOfContent,
-    fullpageSection
+    fullPageSection
   },
   data() {
     return {
@@ -67,5 +67,24 @@ export default {
     max-width: 1321px;
     width: 100%;
     margin: 0 auto;
+  }
+  @media (max-width: 688px) {
+    .header {
+      font-size: 7vw;
+      line-height: 40px;
+    }
+    .container {
+      max-width: 90%;
+    }
+  }
+  @media (min-width: 689px) and (max-width: 992px) {
+    .container {
+      max-width: 90%;
+      width: 100%;
+    }
+    .header {
+      font-size: 7vw;
+      line-height: 7vw;
+    }
   }
 </style>

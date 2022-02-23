@@ -3,7 +3,7 @@
     <img src="../../assets/images/lenovo_logo.svg" class="lenovo-logo">
     <div class="container-flex">
       <div class="row">
-        <div class="col">
+        <div class="col leftCol">
           <h1 class="header">Yoga S740 (14)</h1>
           <h1 class="sub-header">Wyrozniajaca inteligencja</h1>
           <p class="description">
@@ -14,7 +14,7 @@
             VESA400 HDR oraz fantastycznemu dźwiękowi z technologią Dolby Atmos®.
           </p>
         </div>
-        <div class="col">
+        <div class="col rightCol">
           <img src="../../assets/images/laptop_1.png">
         </div>
       </div>
@@ -77,7 +77,7 @@ export default {
     .container-flex .row {
       display: block;
       max-width: 90%;
-      transform: translateY(15%);
+      transform: translateY(9vw);
     }
     .header {
       margin-top: 0;
@@ -91,6 +91,43 @@ export default {
       display: block;
       width: 90%;
       margin: 0 auto;
+    }
+  }
+  @media (min-width: 689px) and (max-width: 992px) {
+    .container-flex .row {
+      display: block;
+      max-width: 60%;
+      transform: translateY(9vw);
+    }
+    .header {
+      margin-top: 0;
+      font-size: 6vw;
+    }
+    .sub-header {
+      margin-top: 0;
+      font-size: 3vw;
+    }
+    .col img {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: 993px) and (max-width: 1320px) {
+    .container-flex .row {
+      max-width: 90%;
+      transform: translateY(23vw);
+    }
+    .col img {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .col.leftCol {
+      width: 50%;
+    }
+    .col.rightCol {
+      width: 50%;
     }
   }
 </style>
